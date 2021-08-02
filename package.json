@@ -50,8 +50,8 @@
     "auto-changelog": "~2.2.1"
   },
   "scripts": {
-    "start": "node --max_old_space_size=4096 react-scripts start",
-    "build": "node --max_old_space_size=4096 react-scripts build",
+    "start": "node --max_old_space_size=4096 node_modules/.bin/react-scripts start",
+    "build": "node --max_old_space_size=4096 node_modules/.bin/react-scripts build",
     "test": "react-scripts test",
     "test:cov": "npm test -- --coverage --watchAll=false",
     "test:debug": "react-scripts --inspect-brk test --runInBand",
