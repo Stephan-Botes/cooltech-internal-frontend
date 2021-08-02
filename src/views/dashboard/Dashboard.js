@@ -40,7 +40,7 @@ class Dashboard extends React.Component {
 
   getOus = async () => {
     try {
-      const response = await fetch('/ous/find/all', {
+      const response = await fetch('https://stepbot-cooltech-internal-api.herokuapp.com/ous/find/all', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ class Dashboard extends React.Component {
 
   getDivisions = async () => {
     try {
-      const response = await fetch('/divisions/find/all', {
+      const response = await fetch('https://stepbot-cooltech-internal-api.herokuapp.com/divisions/find/all', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ class Dashboard extends React.Component {
   }
 
   getUsers = async () => {
-    const response = await fetch(`/users/find/all`, {
+    const response = await fetch(`https://stepbot-cooltech-internal-api.herokuapp.com/users/find/all`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

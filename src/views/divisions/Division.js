@@ -53,7 +53,7 @@ class Division extends Component {
   getDivision = async () => {
     try {
       const id = this.props.match.params.id;
-      const response = await fetch(`/divisions/find/${id}`, {
+      const response = await fetch(`https://stepbot-cooltech-internal-api.herokuapp.com/divisions/find/${id}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -68,7 +68,7 @@ class Division extends Component {
   }
 
   getUsers = async () => {
-    const response = await fetch(`/users/find/all`, {
+    const response = await fetch(`https://stepbot-cooltech-internal-api.herokuapp.com/users/find/all`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

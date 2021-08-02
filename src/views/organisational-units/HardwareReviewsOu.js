@@ -49,7 +49,7 @@ class OrganisationalUnits extends Component {
 
   getOus = async () => {
     try {
-      const response = await fetch('/ous/find/all', {
+      const response = await fetch('https://stepbot-cooltech-internal-api.herokuapp.com/ous/find/all', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ class OrganisationalUnits extends Component {
 
   fetchDivisionDetails = async (id) => {
     try {
-      const response = await fetch(`/divisions/find/${id}`, {
+      const response = await fetch(`https://stepbot-cooltech-internal-api.herokuapp.com/divisions/find/${id}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -110,7 +110,7 @@ class OrganisationalUnits extends Component {
   }
 
   addDivision = async () => {
-    const response = await fetch(`/ous/add/division/60e705bed616322ba883c23b`, {
+    const response = await fetch(`https://stepbot-cooltech-internal-api.herokuapp.com/ous/add/division/60e705bed616322ba883c23b`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

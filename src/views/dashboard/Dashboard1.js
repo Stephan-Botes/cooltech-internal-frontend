@@ -52,7 +52,7 @@ const Dashboard = () => {
 
   // Function used to retrieve the information of the ou collection
   const getOus = async () => {
-    // const response = await fetch('/ous/find/all');
+    // const response = await fetch('https://stepbot-cooltech-internal-api.herokuapp.com/ous/find/all');
     // const data = response.json();
     // const data = ouData;
 

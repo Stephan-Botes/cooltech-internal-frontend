@@ -48,7 +48,7 @@ class Divisions extends Component {
 
   getDivisions = async () => {
     try {
-      const response = await fetch('/divisions/find/all', {
+      const response = await fetch('https://stepbot-cooltech-internal-api.herokuapp.com/divisions/find/all', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -65,7 +65,7 @@ class Divisions extends Component {
   // const createDivision = async () => {
   //   if (newName !== '' && newLogin !== '' && newPassword !== '') {
   //     const id = divisionID;
-  //     const response = await fetch(`divisions/add/credentials/${id}`, {
+  //     const response = await fetch(`https://stepbot-cooltech-internal-api.herokuapp.com/divisions/add/credentials/${id}`, {
   //       method: 'POST',
   //       headers: {
   //         'Content-Type': 'application/json',

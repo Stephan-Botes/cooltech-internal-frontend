@@ -115,7 +115,7 @@ const UsersTable = ({users, divisionID, all}) => {
   const addUser = async () => {
     if (newUserEmail !== '') {
       const email = newUserEmail;
-      const response = await fetch(`users/add/division`, {
+      const response = await fetch(`https://stepbot-cooltech-internal-api.herokuapp.com/users/add/division`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -138,7 +138,7 @@ const UsersTable = ({users, divisionID, all}) => {
   const removeUser = async (item) => {
     if (item) {
       const email = item.email;
-      const response = await fetch(`users/remove/division`, {
+      const response = await fetch(`https://stepbot-cooltech-internal-api.herokuapp.com/users/remove/division`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -166,7 +166,7 @@ const UsersTable = ({users, divisionID, all}) => {
       const firstname = item.firstname;
       const lastname = item.lastname;
 
-      const response = await fetch(`users/update/details`, {
+      const response = await fetch(`https://stepbot-cooltech-internal-api.herokuapp.com/users/update/details`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -197,7 +197,7 @@ const UsersTable = ({users, divisionID, all}) => {
       const id = item._id;
       const role = item.role;
 
-      const response = await fetch(`users/update/role`, {
+      const response = await fetch(`https://stepbot-cooltech-internal-api.herokuapp.com/users/update/role`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

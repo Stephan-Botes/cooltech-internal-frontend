@@ -35,7 +35,7 @@ class Users extends Component {
   }
 
   getUsers = async () => {
-    const response = await fetch(`/users/find/all`, {
+    const response = await fetch(`https://stepbot-cooltech-internal-api.herokuapp.com/users/find/all`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

@@ -65,7 +65,7 @@ const Register = () => {
   }
 
   const submitLoginInfo = async () => {
-    const response = await fetch(`/register`, {
+    const response = await fetch(`https://stepbot-cooltech-internal-api.herokuapp.com/register`, {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
