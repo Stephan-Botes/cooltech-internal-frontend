@@ -14,7 +14,7 @@
       "url": "https://github.com/orgs/coreui/people"
     }
   ],
-  "homepage": "https://stephan-botes.github.io/cooltech-internal-frontend",
+  "homepage": ".",
   "copyright": "Copyright 2017-2020 creativeLabs Łukasz Holeczek",
   "license": "MIT",
   "private": true,
@@ -59,7 +59,7 @@
     "eject": "react-scripts eject",
     "changelog": "auto-changelog --starting-version 3.0.0 --commit-limit false --hide-credit",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"yf
   },
   "bugs": {
     "url": "https://github.com/coreui/coreui-free-react-admin-template/issues"

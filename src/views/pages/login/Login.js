@@ -61,6 +61,7 @@ const Login = () => {
       })
       const token = await response.headers.get('auth-token');
       const body = await response.json();
+
       if (token) {
         const cookies = new Cookies();
         const user = body;
@@ -152,7 +153,7 @@ const Login = () => {
         notification={notification}
         setNotification={setNotification}
         hrefCondition={loggedIn}
-      hrefLink={'#/dashboard'}/>
+        hrefLink={'#/dashboard'}/>
     </div>
   )
 }
